@@ -14,4 +14,11 @@ describe("Sorteio", function() {
 	  expect(lista_pessoas[2]).toEqual('Luan Fonseca');
   });
 
+  it("Bagunçar a lista de pessoas", function() {
+     var pessoas = ["Tiago Jesus", "Leonardo minora", "Luan Fonseca"];
+     var lista_pessoas = baguncaListaPessoas(pessoas);
+
+     expect(lista_pessoas.length).toEqual(3);
+     expect(pessoas).not.toEqual(lista_pessoas);
+  });
 });

@@ -4,10 +4,12 @@ function extraiPessoas (pessoas) {
 	})
 }
 
-
-
-// funcao 2
-
+function baguncaListaPessoas(pessoas) {
+   var temp = pessoas.slice(0);
+   temp.sort(function() {return 0.5 - Math.random()});
+   if (temp > pessoas || temp < pessoas) return temp;
+   return baguncaListaPessoas(pessoas);
+}
 
 
 // funcao 3
