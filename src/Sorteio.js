@@ -1,4 +1,8 @@
-// funcao 1
+function extraiPessoas (pessoas) {
+	return pessoas.split('\n').map(function(p) {
+		return p.trim()
+	})
+}
 
 
 
