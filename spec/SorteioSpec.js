@@ -1,17 +1,17 @@
 describe("Sorteio", function() {
-
+  var pessoas;
 
   beforeEach(function() {
-	  var pessoas = "Tiago Jesus \nLeonardo minora \nLuan Fonseca";
+	  pessoas = "Tiago Jesus \nLeonardo minora \nLuan Fonseca";
   });
 
   it("Retorna uma lista de pessoas", function() {
-	  var pessoas = extraiPessoas(pessoas);
-	  expect(pessoas.lenght).toEqual(3);
+	  var lista_pessoas = extraiPessoas(pessoas);
+	  expect(lista_pessoas.length).toEqual(3);
 	  
-	  expect(pessoas[0]).toEqual('Tiago Jesus');
-  	  expect(pessoas[1]).toEqual('Leonardo minora');
-	  expect(pessoas[2]).toEqual('Luan Fonseca');
+	  expect(lista_pessoas[0]).toEqual('Tiago Jesus');
+  	  expect(lista_pessoas[1]).toEqual('Leonardo minora');
+	  expect(lista_pessoas[2]).toEqual('Luan Fonseca');
   });
 
 });
